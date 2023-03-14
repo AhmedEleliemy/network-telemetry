@@ -1,0 +1,12 @@
+| - src_c: contains all source and header files of the project
+|   | - kafka_producer.h: contains header includes, function and variable declarations that are used by the kafka producer agent
+|   | - kafka_producer.c: contains the actual implementation. The important function is forward_message
+|   | - sinffer.h: contains header includes, function and variale declaration that are used by the pcap sniffer
+|   | - sniffer.c contains actual implementation. The important function is extract_mac_ip_info
+|   | - main.c the interface point between the two agent (sniffer, producer) and the end user
+|   | - Makefile supports ( make , make debug, make withfilter, make clean)
+|   | - required_software contains list of dependencies to execute the code
+|   | - configuration_reader.h contains header includes, function and variable needed to parse user configuration file
+|   | - configuration_reader.c contains the actual implementation needed to parse user configuration file
+|-  src_python
+|   | - kafka_consumer.py contains python codes that acts like kafka-console-consumer execpt that it access the message as JSON object 

@@ -1,0 +1,4 @@
+brew install libpcap
+brew install kafka
+brew install librdkafka
+pip install confluent-kafka
